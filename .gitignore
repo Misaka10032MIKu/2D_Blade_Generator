@@ -1,0 +1,14 @@
+*.dat
+*.DAT
+
+.venv/
+venv/
+runs/
+
+.idea/
+__pycache__/
+
+*.exe
+*.doc
+*.txt
+*.pt
