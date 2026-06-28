@@ -72,7 +72,7 @@ def generate_dataset(n_samples: int = 500, root_dir: str = ".",
             else:
                 failed += 1
 
-            if (i + 1) % 20 == 0:
+            if (i + 1) % 200 == 0:
                 print(f"  进度 {i + 1}/{len(tasks)} | 有效样本 {len(records)} | 失败 {failed}")
 
     df = pd.DataFrame(records)
@@ -82,5 +82,5 @@ def generate_dataset(n_samples: int = 500, root_dir: str = ".",
 
 
 if __name__ == "__main__":
-    df = generate_dataset(n_samples=200, root_dir=".")
+    df = generate_dataset(n_samples=2000, root_dir=".")
     print(df.describe())

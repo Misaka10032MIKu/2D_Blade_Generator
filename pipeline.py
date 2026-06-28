@@ -219,7 +219,7 @@ class CascadePipeline:
             self.write_ises_dat(case_dir, mach_in, params.beta1, template_ises)
             # self.write_ises_dat(case_dir, mach_in, template_ises)
             if not self.run_mises(case_dir):
-                print(f"Case {case_id}: MISES 失败")
+                # print(f"Case {case_id}: MISES 失败")
                 return None
             perf = self.parse_lost(case_dir)
             if not perf.converged:
